@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Greeting for My Teacher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud cloud-one"></div>
+    <div class="cloud cloud-two"></div>
+    <div class="mountains"></div>
+    <div class="stars"></div>
+  </div>
+
+  <!-- Cute Rasengan-style cursor -->
+  <div class="cursor-orb" aria-hidden="true"><span></span></div>
+  <div class="cursor-trail" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">A LITTLE MESSAGE OF GRATITUDE</p>
+      <h1>For My Wonderful Teacher</h1>
+      <p class="subtitle">A small digital card with a big thank-you.</p>
+    </header>
+
+    <section class="card-scene" aria-label="Teacher's Day greeting card">
+      <div class="folder-wrap" id="folderWrap">
+        <div class="folder-back"></div>
+
+        <div class="folder-paper">
+          <div class="paper-glow"></div>
+          <div class="photo-frame">
+            <img src="teacher-photo.jpg" alt="Teacher photo">
+          </div>
+          <div class="message">
+            <p class="small-title">HAPPY TEACHER'S DAY</p>
+            <h2>Thank You, Teacher!</h2>
+            <p>
+              Thank you for your patience, guidance, encouragement, and for
+              believing in your students. Your lessons go beyond the classroom—
+              they inspire us to keep learning, growing, and becoming better
+              versions of ourselves.
+            </p>
+            <p>
+              I truly appreciate the time and effort you give to help us
+              succeed. Your dedication makes a meaningful difference in our
+              lives.
+            </p>
+            <div class="signature">
+              <span>With sincere gratitude,</span>
+              <strong>Your Student</strong>
+            </div>
+          </div>
+        </div>
+
+        <button class="folder-front" id="openFolder" type="button"
+                aria-label="Open the greeting folder">
+          <span class="folder-tab"></span>
+          <span class="folder-label">OPEN<br><b>MY GREETING</b></span>
+          <span class="folder-hint">Click to open</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="open-btn" id="openBtn" type="button">Open My Greeting ✦</button>
+      <button class="music-btn" id="musicBtn" type="button">Ambient Sound: Off</button>
+    </div>
+
+    <p class="footer-note">Move your cursor around to create a tiny Rasengan-inspired glow ✦</p>
+  </main>
+
+  <audio id="ambientAudio" loop>
+    <!-- Optional: add your own MP3 as ambient.mp3 in this folder, then uncomment:
+    <source src="ambient.mp3" type="audio/mpeg">
+    -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
